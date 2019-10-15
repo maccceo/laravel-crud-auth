@@ -1,8 +1,55 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+body {
+	font-family: Nunito, sans-serif;
+	margin: 0;
+	padding: 0 30px;
+}
 
-// Variables
-@import 'variables';
+.box {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border: 1px solid black;
+	text-align: center;
+	line-height: 50px;
+	margin: 5px;
+	font-size: 2rem;
+	font-weight: bold;
+}
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+.number {
+	background-color: orange;
+	color: white;
+}
+
+.letter {
+	background-color: red;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+
+.header {
+	
+	li {
+		display: inline-block;
+		margin: 0 15px;
+		cursor: pointer;
+	}
+
+	li:hover {
+		text-decoration: underline;
+	}
+
+	li:first-child {
+		font-weight: bold;
+	}
+
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+}

@@ -1,16 +1,17 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Cat;
 
-class DatabaseSeeder extends Seeder
+class CatsSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        $this->call(CatsSeeder::class);
+        factory(Cat::class, 50) -> Create();
     }
 }
