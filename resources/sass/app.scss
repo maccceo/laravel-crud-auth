@@ -1,13 +1,46 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
 body {
 	font-family: Nunito, sans-serif;
 	margin: 0;
-	padding: 0 30px;
+	padding: 0 50px;
+}
+
+.cat {
+	display: inline-block;
+	width: 100px;
+}
+
+.cat_show {
+	margin: 30px 0;
+	p {
+		margin: 3px 0;
+	}
+	h2 {
+		text-align: center;
+	}
+}
+
+.cat_create_button {
+	border: 1px solid black;
+	padding: 5px 10px;
+	color: black;
+	font-size: 1rem;
+	text-decoration: none;
+	margin: 20px 0;
+	display: inline-block;
 }
 
 .box {
 	display: inline-block;
-	height: 50px;
-	width: 50px;
 	border: 1px solid black;
 	text-align: center;
 	line-height: 50px;
@@ -16,23 +49,8 @@ body {
 	font-weight: bold;
 }
 
-.number {
-	background-color: orange;
-	color: white;
-}
-
-.letter {
-	background-color: red;
-	color: white;
-}
-
-h1 {
-	text-align: center;
-}
-
 
 .header {
-	
 	li {
 		display: inline-block;
 		margin: 0 15px;
@@ -50,6 +68,6 @@ h1 {
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
+	background-color: darkgrey;
+	margin-top: 50px;
 }
